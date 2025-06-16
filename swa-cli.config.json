@@ -7,10 +7,10 @@
       "outputLocation": ".\\Client\\dist",
       "apiLanguage": "dotnetisolated",
       "apiVersion": "8.0",
-      "apiBuildCommand": "dotnet .\b2dk\b2dk.csproj build -c Release",
-      "appBuildCommand": "npm run build",
+      "appBuildCommand": "npm run build && copy .\\staticwebapp.config.json .\\dist\\staticwebapp.config.json ",
       "run": "npm run dev",
-      "appDevserverUrl": "http://localhost:5173"
+      "appDevserverUrl": "http://localhost:5173",
+      "apiBuildCommand": "cd ..\\..\\..\\ && cd && dotnet build -c release"
     }
   }
 }

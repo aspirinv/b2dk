@@ -1,0 +1,19 @@
+{
+  "platform": {
+    "apiRuntime": "dotnet-isolated:8.0"
+  },
+  "routes": [
+    {
+      "route": "/excuses",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/homework",
+      "rewrite": "/index.html"
+    }
+  ],
+    "navigationFallback": 
+   {
+      "rewrite": "index.html"
+   }
+}

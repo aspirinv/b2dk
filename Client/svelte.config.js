@@ -1,7 +1,9 @@
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
+import azure from 'svelte-adapter-azure-swa';
 
 export default {
-  // Consult https://svelte.dev/docs#compile-time-svelte-preprocess
-  // for more information about preprocessors
-  preprocess: vitePreprocess(),
+  kit: {
+    adapter: azure()
+  },
+  preprocess: vitePreprocess()
 }

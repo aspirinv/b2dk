@@ -12,7 +12,7 @@ public class HaFunctions(ILogger<HaFunctions> logger, HttpClient client)
     [Function("HaList")]
     public async Task<ActionResult> Run([HttpTrigger(AuthorizationLevel.Function, "get")] HttpRequest req)
     {
-        var content = await (await client.GetAsync("https://drive.google.com/file/d/1aAgRv0inkoZFqZMzLbiKBsaSkRPzSBDo/view?usp=drive_link"))
+        var content = await (await client.GetAsync("https://raw.githubusercontent.com/aspirinv/b2dk/refs/heads/master/Client/b2dkha.txt"))
             .Content.ReadAsStringAsync();
         var lines = content.Split("\n", StringSplitOptions.RemoveEmptyEntries);
 
@@ -20,7 +20,8 @@ public class HaFunctions(ILogger<HaFunctions> logger, HttpClient client)
         {
             id = a[0],
             type = a[1],
-            description = a[2]
+            description = a[2],
+            till = a[3]
         }));
     }
 }
