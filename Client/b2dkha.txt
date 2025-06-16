@@ -4,10 +4,10 @@
 4;B;S38 und sie; 24.06.2025
 5;B;S39 und sie; 24.06.2025
 6;B;S11 und sie; 24.06.2025
-7;K;19 Passivs‰tze schreiben; 24.06.2025
+7;K;19 Passivs√§tze schreiben; 24.06.2025
 8;K;18: 18 und 20; 24.06.2025
 9;K;17 5c und 5e; 24.06.2025
-10;K;16 Passivs‰tze schreiben; 24.06.2025
+10;K;16; 24.06.2025
 11;B;Seite 45 : 3c; 24.06.2025
 12;B;Seite 46; 24.06.2025
 13;B;Seite 47; 24.06.2025

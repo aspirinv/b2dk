@@ -14,6 +14,7 @@ interface task{
   description: string;
   type: string;
   done: boolean;
+  till: string;
 }
 </script>
 
@@ -26,6 +27,7 @@ interface task{
         <i class="bi bi-file-earmark"></i>
       {/if}
       <label for="{t.id}" class="form-label ms-2 flex-fill">{t.description}</label>
+      <p class="my-1 mx-2">{t.till}</p>
       <input type="checkbox" class="form-check-input me-2 mt-2" id="{t.id}" onchange="{(s)=>  localStorage["task_" + t.id] = s.target.checked}" bind:checked={t.done}>
     </div>
   {/each}
